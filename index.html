@@ -1,0 +1,306 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Alish ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff6b9d,#ff9ec4);
+overflow:hidden;
+color:white;
+text-align:center;
+}
+
+.page{
+display:none;
+height:100vh;
+padding:20px;
+overflow-y:auto;
+}
+
+.active{
+display:block;
+}
+
+h1{
+margin-top:30px;
+font-size:42px;
+text-shadow:0 0 20px rgba(255,255,255,.8);
+}
+
+p{
+max-width:850px;
+margin:15px auto;
+line-height:1.8;
+font-size:18px;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+background:white;
+color:#ff4f81;
+margin-top:25px;
+font-weight:bold;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.photo{
+width:250px;
+height:250px;
+border-radius:50%;
+overflow:hidden;
+margin:25px auto;
+border:6px solid white;
+box-shadow:0 0 35px white;
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+
+.gallery img{
+width:220px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(255,255,255,.5);
+}
+
+video{
+width:90%;
+max-width:400px;
+border-radius:20px;
+margin-top:20px;
+}
+
+.cake{
+font-size:120px;
+animation:bounce 1s infinite;
+margin-top:60px;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:float 6s linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-120vh);}
+}
+
+.typing{
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid white;
+width:0;
+margin:auto;
+animation:typing 6s steps(40,end) forwards;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page active" id="page1">
+
+<h1>Happy Birthday Alish ❤️</h1>
+
+<p>Someone prepared a surprise only for you ✨</p>
+
+<div class="photo">
+<img src="Alish.jpeg">
+</div>
+
+<button class="btn" onclick="nextPage(2)">
+Start Surprise 🎁
+</button>
+
+</div>
+
+<div class="page" id="page2">
+
+<div class="cake">🎂</div>
+
+<h1>Make A Wish ✨</h1>
+
+<p>Close your eyes and make your most beautiful wish ❤️</p>
+
+<button class="btn" onclick="nextPage(3)">
+Cut The Cake 🎂
+</button>
+
+</div>
+
+<div class="page" id="page3">
+
+<h1>Beautiful Memories 📸</h1>
+
+<div class="gallery">
+
+<img src="lifeline1.jpeg">
+<img src="lifeline2.jpeg">
+<img src="lifeline3.jpeg">
+
+</div>
+
+<button class="btn" onclick="nextPage(4)">
+Read My Heart ❤️
+</button>
+
+</div>
+```
+```html
+<div class="page" id="page4">
+
+<h1 class="typing">Happy Birthday! 🎂❤️ Mera Chand 🫀</h1>
+
+<p>
+Aaj ka din sirf tumhara birthday nahi, balkay us khoobsurat rooh ka din hai jis ne meri zindagi ke kuch aam lamhon ko bhi khaas bana diya.
+</p>
+
+<p>
+Pata nahi kab aur kaise, lekin tum meri rozmarra ki sochon aur duaaon ka hissa ban gayi.
+</p>
+
+<p>
+Aaj main Allah se sirf itni dua karta hoon ke tumhari zindagi mein kabhi khushiyon ki kami na aaye.
+</p>
+
+<p>
+Tum jis raaste par chalo, Allah us mein tumhare liye aasaniyan, barkatein aur kamyabiyan likh de.
+</p>
+
+<p>
+Tumhara dil hamesha sukoon mein rahe aur tumhari aankhon mein hamesha muskurahat basi rahe.
+</p>
+
+<p>
+Kuch log zindagi mein aakar bas mil jaate hain, aur kuch log aise hote hain jo dheere dheere dil ke itne qareeb ho jaate hain ke unki khushi apni khushi lagne lagti hai.
+</p>
+
+<p>
+Tum unhi logon mein se ho ❤️
+</p>
+
+<p>
+Mujhe nahi pata ke mustaqbil kya likha hai, lekin itna zaroor jaanta hoon ke tumhari izzat, tumhari khushi aur tumhari muskurahat hamesha mere liye khaas rahegi.
+</p>
+
+<p>
+Allah tumhein har gham se mehfooz rakhe, har dua qubool kare aur tumhari zindagi ko itna haseen bana de ke tum jab bhi peeche mud kar dekho to tumhare chehre par sirf shukr aur muskurahat ho ❤️
+</p>
+
+<p>
+Happy Birthday once again 🌹
+</p>
+
+<p>
+Aaj meri sab se khoobsurat dua sirf tumhare liye hai ❤️
+</p>
+
+<button class="btn" onclick="nextPage(5)">
+Final Surprise 🎥
+</button>
+
+</div>
+
+<div class="page" id="page5">
+
+<h1>I Love Your Smile ❤️</h1>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+<p style="margin-top:20px;">
+May Allah always keep you happy 🌹
+</p>
+
+<h2 style="margin-top:30px;">
+Happy Birthday Alish ❤️
+</h2>
+
+</div>
+
+<script>
+
+function nextPage(num){
+
+document.querySelectorAll(".page").forEach(page=>{
+page.classList.remove("active");
+});
+
+document.getElementById("page"+num).classList.add("active");
+
+window.scrollTo(0,0);
+
+}
+
+function createHeart(){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*20)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+}
+
+setInterval(createHeart,700);
+
+</script>
+
+</body>
+</html>
+```
